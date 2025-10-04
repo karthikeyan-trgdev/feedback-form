@@ -348,6 +348,9 @@ button:hover {
   }
 }
 @media screen and (min-width: 200px) and (max-width: 699px) {
+  .main-wrapper .header .logo img{
+    margin-bottom: 15px;
+  }
   .main-wrapper .form-content{
     margin-top: 30px !important
   }
