@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback Form - Top Rock Global</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div class="container">
+        <div class="row" style="display: flex; align-items: center">
+          <div class="col-lg-6">
+            <div class="left-content">
+              <div class="header">
+                <div class="logo">
+                  <img src="assets/images/tri-logo.png" alt="" />
+                </div>
+                <div class="title">
+                  <h1>Feel free to drop us your Feedback!</h1>
+                  <p>
+                    We value your thoughts and suggestions. Your feedback helps
+                    us understand what we’re doing well and where we can
+                    improve. Please share your experience so we can continue
+                    delivering the best service possible.
+                  </p>
+                  <h6>Follow us on :</h6>
+                  <div class="social-icons">
+                    <div class="item">
+                      <a href="https://www.instagram.com/toprockinteriorsgroup/?hl=en" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                    <div class="item">
+                      <a href="https://www.facebook.com/toprockinteriorsgroup/?_rdr" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                    </div>
+                    <div class="item">
+                      <a href="https://ae.linkedin.com/company/toprockinteriorsgroup" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <div class="item">
+                      <a href="https://www.youtube.com/@toprockinteriorsllc" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="item">
+                      <a href="#"><i class="fa-brands fa-square-x-twitter" target="_blank"></i></a>
+                    </div>
+                  </div>
+                  <!-- <div class="animation">
+                    <script
+                      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js"
+                      type="module"
+                    ></script>
+                    <dotlottie-wc
+                      src="https://lottie.host/481b520d-6629-47a4-b8ec-c02c81262ec3/9Tw2IqjBeK.lottie"
+                      style="width: 150px; height: 60px"
+                      autoplay
+                      loop
+                    ></dotlottie-wc>
+                  </div> -->
+                  <div class="animation">
+                    <div class="image-1">
+                      <img src="assets/images/line.png" alt="" style="filter: brightness(0) invert(1);">
+                    </div>
+                    <!-- <iframe
+                      src="https://lottie.host/embed/2a1bd4fd-fe57-4d0d-867f-8868d631723c/27huItWnQF.lottie"
+                      style="width: 350px; height: 350px"
+                    ></iframe> -->
+                    <!-- <iframe src="https://lottie.host/embed/03154997-bcdd-427e-bb15-16e5e5eab684/ovHZYpK7dQ.lottie" style="width: 300px;height: 300px;"></iframe> -->
+                  </div>
+                  <h6 style="padding-bottom: 10px">
+                    Numbers speaks more than words
+                  </h6>
+                  <div class="counter-container">
+                    <div class="counter-item">
+                      <span class="number" data-target="500">0</span
+                      ><span class="plus">+</span>
+                      <small>Total Clients</small>
+                    </div>
+                    <div class="counter-item">
+                      <span class="number" data-target="400">0</span
+                      ><span class="plus">+</span>
+                      <small>Completed Projects</small>
+                    </div>
+                    <div class="counter-item">
+                      <span class="number" data-target="10">0</span
+                      ><span class="plus">+</span>
+                      <small>Worldwide</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="form-content">
+              <form id="feedbackForm">
+                <!-- Step 1: Project Information -->
+                <div class="step active">
+                  <h3>Project Information</h3>
+                  <label>Project Name:</label>
+                  <input type="text" name="project_name" required />
+
+                  <label>Project Location:</label>
+                  <input type="text" name="project_location" required />
+
+                  <label>Client Name / Company:</label>
+                  <input type="text" name="client_name" required />
+
+                  <label>Date of Handover:</label>
+                  <div class="date-wrapper">
+                    <input type="date" name="handover_date" required />
+                    <span class="calendar-icon"
+                      ><i class="fa-regular fa-calendar-days"></i
+                    ></span>
+                  </div>
+                  <!-- <input
+                    type="date"
+                    name="handover_date"
+                    required
+                    style="accent-color: #fff"
+                  /> -->
+
+                  <label>Contact Person:</label>
+                  <input type="text" name="contact_person" required />
+
+                  <label>Email / Phone:</label>
+                  <input type="text" name="contact_info" required />
+
+                  <div class="buttons">
+                    <button type="button" onclick="nextStep()">Next</button>
+                  </div>
+                </div>
+
+                <!-- Step 2: Project Experience -->
+                <div class="step">
+                  <h3>Project Experience</h3>
+
+                  <label
+                    >1. How satisfied are you with the overall quality of the
+                    project?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="quality"
+                        value="Excellent"
+                        required
+                      />
+                      Excellent</label
+                    >
+                    <label
+                      ><input type="radio" name="quality" value="Good" />
+                      Good</label
+                    >
+                    <label
+                      ><input type="radio" name="quality" value="Fair" />
+                      Fair</label
+                    >
+                    <label
+                      ><input type="radio" name="quality" value="Poor" />
+                      Poor</label
+                    >
+                  </div>
+
+                  <label
+                    >2. Did the project meet the agreed design and
+                    specifications?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="design_spec"
+                        value="Yes, completely"
+                        required
+                      />
+                      Yes, completely</label
+                    >
+                    <label
+                      ><input type="radio" name="design_spec" value="Mostly" />
+                      Mostly</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="design_spec"
+                        value="Partially"
+                      />
+                      Partially</label
+                    >
+                    <label
+                      ><input type="radio" name="design_spec" value="No" />
+                      No</label
+                    >
+                  </div>
+
+                  <label
+                    >3. How would you rate the workmanship and attention to
+                    detail?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="workmanship"
+                        value="Excellent"
+                        required
+                      />
+                      Excellent</label
+                    >
+                    <label
+                      ><input type="radio" name="workmanship" value="Good" />
+                      Good</label
+                    >
+                    <label
+                      ><input type="radio" name="workmanship" value="Fair" />
+                      Fair</label
+                    >
+                    <label
+                      ><input type="radio" name="workmanship" value="Poor" />
+                      Poor</label
+                    >
+                  </div>
+
+                  <label
+                    >4. How satisfied are you with the project timeline?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="timeline"
+                        value="Very satisfied"
+                        required
+                      />
+                      Very satisfied</label
+                    >
+                    <label
+                      ><input type="radio" name="timeline" value="Satisfied" />
+                      Satisfied</label
+                    >
+                    <label
+                      ><input type="radio" name="timeline" value="Neutral" />
+                      Neutral</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="timeline"
+                        value="Dissatisfied"
+                      />
+                      Dissatisfied</label
+                    >
+                  </div>
+
+                  <label
+                    >5. How was your communication experience with our
+                    team?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="communication"
+                        value="Excellent"
+                        required
+                      />
+                      Excellent</label
+                    >
+                    <label
+                      ><input type="radio" name="communication" value="Good" />
+                      Good</label
+                    >
+                    <label
+                      ><input type="radio" name="communication" value="Fair" />
+                      Fair</label
+                    >
+                    <label
+                      ><input type="radio" name="communication" value="Poor" />
+                      Poor</label
+                    >
+                  </div>
+
+                  <div class="buttons">
+                    <button type="button" onclick="prevStep()">Previous</button>
+                    <button type="button" onclick="nextStep()">Next</button>
+                  </div>
+                </div>
+
+                <!-- Step 3: Handover & After-Sales -->
+                <div class="step">
+                  <h3>Handover & After-Sales</h3>
+
+                  <label
+                    >6. Was the handover process smooth and
+                    well-organized?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="handover_process"
+                        value="Yes"
+                        required
+                      />
+                      Yes</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="handover_process"
+                        value="Somewhat"
+                      />
+                      Somewhat</label
+                    >
+                    <label
+                      ><input type="radio" name="handover_process" value="No" />
+                      No</label
+                    >
+                  </div>
+
+                  <label
+                    >7. Were all snagging issues (if any) addressed
+                    promptly?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="snagging"
+                        value="Yes"
+                        required
+                      />
+                      Yes</label
+                    >
+                    <label
+                      ><input type="radio" name="snagging" value="Partially" />
+                      Partially</label
+                    >
+                    <label
+                      ><input type="radio" name="snagging" value="No" />
+                      No</label
+                    >
+                  </div>
+
+                  <label
+                    >8. Have you received all necessary project documentation
+                    (drawings, manuals, warranties, etc.)?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="documentation"
+                        value="Yes"
+                        required
+                      />
+                      Yes</label
+                    >
+                    <label
+                      ><input type="radio" name="documentation" value="No" />
+                      No</label
+                    >
+                  </div>
+
+                  <div class="buttons">
+                    <button type="button" onclick="prevStep()">Previous</button>
+                    <button type="button" onclick="nextStep()">Next</button>
+                  </div>
+                </div>
+
+                <!-- Step 4: Overall Satisfaction -->
+                <div class="step">
+                  <h3>Overall Satisfaction</h3>
+
+                  <label
+                    >9. How likely are you to recommend us to others?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="recommend"
+                        value="Very likely"
+                        required
+                      />
+                      Very likely</label
+                    >
+                    <label
+                      ><input type="radio" name="recommend" value="Likely" />
+                      Likely</label
+                    >
+                    <label
+                      ><input type="radio" name="recommend" value="Neutral" />
+                      Neutral</label
+                    >
+                    <label
+                      ><input type="radio" name="recommend" value="Unlikely" />
+                      Unlikely</label
+                    >
+                  </div>
+
+                  <label
+                    >10. How likely are you to work with us again for future
+                    projects?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="future_projects"
+                        value="Very likely"
+                        required
+                      />
+                      Very likely</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="future_projects"
+                        value="Likely"
+                      />
+                      Likely</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="future_projects"
+                        value="Neutral"
+                      />
+                      Neutral</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="future_projects"
+                        value="Unlikely"
+                      />
+                      Unlikely</label
+                    >
+                  </div>
+
+                  <div class="buttons">
+                    <button type="button" onclick="prevStep()">Previous</button>
+                    <button type="button" onclick="nextStep()">Next</button>
+                  </div>
+                </div>
+
+                <!-- Step 5: Open Feedback -->
+                <div class="step">
+                  <h3>Open Feedback</h3>
+
+                  <label>11. What did you like most about our service?</label>
+                  <textarea name="like_most" rows="4" required></textarea>
+
+                  <label>12. What can we improve on?</label>
+                  <textarea name="improve" rows="4"></textarea>
+
+                  <label>13. Any additional comments or suggestions?</label>
+                  <textarea name="additional_comments" rows="4"></textarea>
+
+                  <div class="buttons">
+                    <button type="button" onclick="prevStep()">Previous</button>
+                    <button type="button" onclick="nextStep()">Next</button>
+                  </div>
+                </div>
+
+                <!-- Step 6: Testimonials & Signature -->
+                <div class="step">
+                  <h3>Testimonials & Signature</h3>
+
+                  <label
+                    >14. Would you like to provide a testimonial about your
+                    experience?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="testimonial_opt"
+                        value="Yes"
+                        required
+                      />
+                      Yes</label
+                    >
+                    <label
+                      ><input type="radio" name="testimonial_opt" value="No" />
+                      No</label
+                    >
+                  </div>
+
+                  <label
+                    >15. If yes, please share your testimonial below:</label
+                  >
+                  <textarea name="testimonial" rows="4"></textarea>
+
+                  <label
+                    >16. Can we feature your testimonial on our website or
+                    social media?</label
+                  >
+                  <div class="options">
+                    <label
+                      ><input
+                        type="radio"
+                        name="testimonial_feature"
+                        value="Yes, with my name/company"
+                      />
+                      Yes, with my name/company</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="testimonial_feature"
+                        value="Yes, anonymously"
+                      />
+                      Yes, anonymously</label
+                    >
+                    <label
+                      ><input
+                        type="radio"
+                        name="testimonial_feature"
+                        value="No"
+                      />
+                      No</label
+                    >
+                  </div>
+
+                  <label>Signature:</label>
+                  <input type="text" name="signature" />
+
+                  <label>Date:</label>
+                  <input type="text" name="signature_date" />
+
+                  <div class="buttons">
+                    <button type="button" onclick="prevStep()">Previous</button>
+                    <button type="submit">Submit Feedback</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const counters = document.querySelectorAll(".number");
+
+      counters.forEach((counter) => {
+        const updateCount = () => {
+          const target = +counter.getAttribute("data-target");
+          const count = +counter.innerText;
+          const increment = target / 200; // speed of counting
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + increment);
+            requestAnimationFrame(updateCount);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        updateCount();
+      });
+    </script>
+
+    <script>
+      let currentStep = 0;
+      const steps = document.querySelectorAll(".step");
+
+      function showStep(step) {
+        steps.forEach((s, index) => {
+          s.classList.toggle("active", index === step);
+        });
+      }
+
+      function nextStep() {
+        if (currentStep < steps.length - 1) {
+          currentStep++;
+          showStep(currentStep);
+        }
+      }
+
+      function prevStep() {
+        if (currentStep > 0) {
+          currentStep--;
+          showStep(currentStep);
+        }
+      }
+
+      document
+        .getElementById("feedbackForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          alert("Thank you for submitting your feedback!");
+          // Here you can add AJAX submission if required
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+  </body>
+</html>
