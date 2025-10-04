@@ -342,6 +342,9 @@ button:hover {
   }
 }
 @media screen and (min-width: 200px) and (max-width: 699px) {
+  .mob-d-none{
+    display: none;
+  }
   .counter-container{
     display: none;
   }
